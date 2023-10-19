@@ -1,0 +1,17 @@
+.resultSection {
+    background-color: #63666A;
+    text-align: center;
+    border-radius: 25px;
+    border-style: solid;
+    margin: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.selectBar {
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    padding-bottom: 50px;
+}

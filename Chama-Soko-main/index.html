@@ -1,0 +1,1060 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Chama Soko</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Create awesome event experience with Chamasoko" />
+    <meta name="keywords" content="Chamasoko, Event" />
+    <meta name="author" content="Chamasoko" />
+    <link rel="icon" type="image/x-icon" href="./Front/image/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="./Front/css/vendor.min.css" />
+    <link rel="stylesheet" href="./Front/css/style.css" />
+</head>
+
+<body>
+    
+    <div class="wrapper" onmouseover="showBottomSections()">
+
+        <header class="header-section">
+
+            <nav class="navbar navbar-dark navbar-header navbar-expand-lg">
+                <div class="container">
+                    <div class="header-logo">
+                        <a class="navbar-brand" href="#">
+                            <img src="./Front/image/header-logo.svg" alt="Chama Soko" />
+                        </a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
+                        aria-label="Toggle navigation" > 
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarContent">
+                        <ul class="navbar-nav ms-auto mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about-us">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#our-product">Our Product</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#apps" onclick="showSection('apps')">Apps</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#faqs" onclick="showSection('faqs')">FAQs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#review" onclick="showSection('review')">Review</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact-us" onclick="showSection('contact-us')">Contact Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./login/login.html">Log In</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link pad-btn" href="#">
+                                    <button type="button" class="btn btn-gradients">Get An App</button>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="scroll-text" onclick="topFunction()">
+                <a href="#">
+                    <img src="./Front/image/line-img.svg" width="61" height="2" alt="" />
+                    <p>Scroll to top</p>
+                </a>
+            </div>
+
+            <section id="home" class="banner-section" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                data-aos-duration="3000">
+                <img class="banner-bg-img1" src="./Front/image/banner-bg-img1.svg" alt="" data-aos="fade-top"
+                    data-aos-duration="1000" />
+                <img class="banner-bg-img2" src="./Front/image/banner-bg-img2.svg" alt="" data-aos="fade-top"
+                    data-aos-duration="1000" />
+                <div class="banner_gradient_left"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-7">
+                            <div class="banner-block">
+                                <div class="banner-icon">
+                                    <img src="./Front/image/banner-icon.svg" width="55" height="55" alt="" />
+                                </div>
+                                <div class="text-block" data-aos="fade-top" data-aos-duration="2000">
+                                    <h1>Create awesome event experience with
+                                        <span>“<strong>Chamasoko</strong>”.</span>
+                                    </h1>
+                                    <p>Monetize your next event with the Chamasoko App. This app will allow users to
+                                        interact with DJ to request songs as well as allow Businesses in the community
+                                        to market products and services to you event goers. Chamasoko creates a digital
+                                        experience at your event which will open the door for many way increase your
+                                        profit margin at your events.</p>
+                                    <p class="pt-3">Allow people to subscribe to your events. Users can request music
+                                        from DJ similar to jukebox. Marketers in the area can market to your event goers
+                                        which gives the unique dynamic for marketers to market geographically.</p>
+                                </div>
+                                <div class="button-block" data-aos="fade-top" data-aos-duration="3000">
+                                    <a href="#">
+                                        <button type="button" class="btn btn-gradient">Get An App
+                                            <div class="btn-background">
+                                                <img src="./Front/image/playstore-icon.svg" width="24" height="24"
+                                                    alt="" />
+                                            </div>
+                                        </button>
+                                    </a>
+                                </div>
+                                <div class="button-block" data-aos="fade-top" data-aos-duration="3000">
+                                    <a href="https://marvelapp.com/prototype/bb0egi3/screen/90082946">
+                                        <button type="button" class="btn btn-gradient">Try App Prototype
+                                            <div class="btn-background">
+                                                <img src="./Front/image/playstore-icon.svg" width="24" height="24"
+                                                    alt="" />
+                                            </div>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="banner_gradient_right"></div>
+                        <div class="col-12 col-lg-5">
+                            <div class="banner-img" data-aos="fade-top" data-aos-duration="1000">
+                                <img src="./Front/image/banner-img.svg" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="follow-text">
+                <p>Follow Us —
+                    <a href="https://www.facebook.com/" target="_blank">Fb.</a> /
+                    <a href="https://instagram.com/chama_soko?igshid=YmMyMTA2M2Y=" target="_blank">In.</a> /
+                    <a href="https://twitter.com/" target="_blank">Tw.</a>
+                </p>
+            </div>
+        </header>
+
+
+        <main class="main-section">
+
+            <section id="about-us" class="about-us" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                data-aos-duration="3000">
+                <img class="aboutus-bg-img" src="./Front/image/aboutus-bg-img.svg" alt="" data-aos="fade-top"
+                    data-aos-duration="1000" />
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-xl-8">
+                            <div class="about-main_block">
+                                <div class="about-updown-block">
+                                    <a href="#">
+                                        <div class="about-small about-block active" data-aos="fade-top"
+                                            data-aos-duration="2000">
+                                            <div class="about-img-block">
+                                                <img src="./Front/image/story-feature-icon.svg" width="30" height="53"
+                                                    alt="" />
+                                            </div>
+                                            <p>Story Feature</p>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="about-small about-block margin-top" data-aos="fade-top"
+                                            data-aos-duration="3000">
+                                            <div class="about-img-block">
+                                                <img src="./Front/image/request-adv-icon.svg" width="42" height="53"
+                                                    alt="" />
+                                            </div>
+                                            <p>Request Adv</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="about-updown-block">
+                                    <a href="#">
+                                        <div class="about-medium about-block" data-aos="fade-top"
+                                            data-aos-duration="4000">
+                                            <div class="about-img-block">
+                                                <img src="./Front/image/request-song-icon.svg" width="42" height="42"
+                                                    alt="" />
+                                            </div>
+                                            <p>Request Song</p>
+                                        </div>
+                                    </a>
+                                    <div class="side-block" data-aos="fade-top" data-aos-duration="2000">
+                                        <a href="#">
+                                            <div class="about-small about-block margin-top">
+                                                <div class="about-img-block">
+                                                    <img src="./Front/image/scan-qr-icon.svg" width="42" height="42"
+                                                        alt="" />
+                                                </div>
+                                                <p>Scan QR</p>
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="small-logo margin-top" data-aos="fade-top"
+                                                data-aos-duration="3000">
+                                                <img src="./Front/image/small-logo.svg" width="33" height="33" alt="" />
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <a href="#">
+                                        <div class="about-small about-block margin-top-left" data-aos="fade-top"
+                                            data-aos-duration="4000">
+                                            <div class="about-img-block">
+                                                <img src="./Front/image/chat-icon.svg" width="43" height="43" alt="" />
+                                            </div>
+                                            <p>Chat</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="about-updown-block">
+                                    <a href="#">
+                                        <div class="about-large about-block" data-aos="fade-top"
+                                            data-aos-duration="2000">
+                                            <div class="about-img-block">
+                                                <img src="./Front/image/social-login-icon.svg" width="43" height="42"
+                                                    alt="" />
+                                            </div>
+                                            <p>Social Login</p>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="about-small about-block live-feed" data-aos="fade-top"
+                                            data-aos-duration="3000">
+                                            <div class="about-img-block">
+                                                <img src="./Front/image/live-feed-icon.svg" width="43" height="36"
+                                                    alt="" />
+                                            </div>
+                                            <p>Live Feed</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-xl-4">
+                            <div class="aboutus-content">
+                                <div class="title-block" data-aos="fade-top" data-aos-duration="1000">
+                                    <p>About Us</p>
+                                    <img src="./Front/image/line-img.svg" width="61" height="2" alt="" />
+                                </div>
+                                <div class="text-block" data-aos="fade-top" data-aos-duration="2000">
+                                    <h3>Create awesome event</h3>
+                                    <p>Event experience for your audience that is visible around your locations, with an
+                                        easy check-in option from anywhere. It is your very own event social network.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="about-img" data-aos="fade-top" data-aos-duration="1000">
+                                <img src="./Front/image/about-img.svg" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="our-product" class="about-product" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                data-aos-duration="3000">
+                <img class="about-bg-img1" src="./Front/image/about-bg-img1.svg" alt="" data-aos="fade-top"
+                    data-aos-duration="1000" />
+                <img class="about-bg-img2" src="./Front/image/about-bg-img2.svg" alt="" data-aos="fade-top"
+                    data-aos-duration="1000" />
+                <div class="container">
+                    <div class="stepper">
+                        <div class="tab-content">
+                            <div id="aboutproduct_step1" class="tab-pane active">
+                                <div class="row">
+                                    <div class="col-12 col-lg-6">
+                                        <div class="about-product-img" data-aos="fade-top" data-aos-duration="1000">
+                                            <div class="bg-gradient"></div>
+                                            <img src="./Front/image/about-product-img1.svg" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <div class="about-product-content">
+                                            <div class="title-block" data-aos="fade-top" data-aos-duration="2000">
+                                                <p>About Product</p>
+                                                <img src="./Front/image/line-img.svg" width="61" height="2" alt="" />
+                                            </div>
+                                            <p class="color-text">Event Feed</p>
+                                            <div class="text-block" data-aos="fade-top" data-aos-duration="4000">
+                                                <h3>Share and see things happening all around your event</h3>
+                                                <p>Event experience for your audience that is visible around your
+                                                    locations, with an easy check-in option from anywhere. It is your
+                                                    very own event social network.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="aboutproduct_step2" class="tab-pane fade">
+                                <div class="row">
+                                    <div class="col-12 col-lg-6">
+                                        <div class="about-product-img" data-aos="fade-top" data-aos-duration="1000">
+                                            <div class="bg-gradient"></div>
+                                            <img src="./Front/image/about-product-img2.svg" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <div class="about-product-content">
+                                            <div class="title-block" data-aos="fade-top" data-aos-duration="2000">
+                                                <p>About Product</p>
+                                                <img src="./Front/image/line-img.svg" width="61" height="2" alt="" />
+                                            </div>
+                                            <p>Ticket and Scan QA Code</p>
+                                            <div class="text-block" data-aos="fade-top" data-aos-duration="4000">
+                                                <h3>Book Tickets with SCAN QR Code and Check-in</h3>
+                                                <p>Event experience for your audience that is visible around your
+                                                    locations, with an easy check-in option from anywhere. It is your
+                                                    very own event social network.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="aboutproduct_step3" class="tab-pane fade">
+                                <div class="row">
+                                    <div class="col-12 col-lg-6">
+                                        <div class="about-product-img" data-aos="fade-top" data-aos-duration="1000">
+                                            <div class="bg-gradient"></div>
+                                            <img src="./Front/image/about-product-img3.svg" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <div class="about-product-content">
+                                            <div class="title-block" data-aos="fade-top" data-aos-duration="2000">
+                                                <p>About Product</p>
+                                                <img src="./Front/image/line-img.svg" width="61" height="2" alt="" />
+                                            </div>
+                                            <p class="color-text">Request and Live Events</p>
+                                            <div class="text-block" data-aos="fade-top" data-aos-duration="4000">
+                                                <h3>Request Song and Adv in Live events</h3>
+                                                <p>Request song, Organiser will approve and DJ will play during Live
+                                                    event, On rejection of Song refund issued.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="aboutproduct_step4" class="tab-pane fade">
+                                <div class="row">
+                                    <div class="col-12 col-lg-6">
+                                        <div class="about-product-img" data-aos="fade-top" data-aos-duration="1000">
+                                            <div class="bg-gradient"></div>
+                                            <img src="./Front/image/about-product-img4.svg" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <div class="about-product-content">
+                                            <div class="title-block" data-aos="fade-top" data-aos-duration="2000">
+                                                <p>About Product</p>
+                                                <img src="./Front/image/line-img.svg" width="61" height="2" alt="" />
+                                            </div>
+                                            <p class="color-text">Story Feature</p>
+                                            <div class="text-block" data-aos="fade-top" data-aos-duration="4000">
+                                                <h3>Create Story with the Features</h3>
+                                                <p>Create story with image/video, caption and URL attached, Like and
+                                                    comment by other app user for your publised story.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="aboutproduct_step5" class="tab-pane fade">
+                                <div class="row">
+                                    <div class="col-12 col-lg-6">
+                                        <div class="about-product-img" data-aos="fade-top" data-aos-duration="1000">
+                                            <div class="bg-gradient"></div>
+                                            <img src="./Front/image/about-product-img5.svg" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <div class="about-product-content">
+                                            <div class="title-block" data-aos="fade-top" data-aos-duration="2000">
+                                                <p>About Product</p>
+                                                <img src="./Front/image/line-img.svg" width="61" height="2" alt="" />
+                                            </div>
+                                            <p class="color-text">Subscription The App</p>
+                                            <div class="text-block" data-aos="fade-top" data-aos-duration="4000">
+                                                <h3>Subscription Plans & Benefits of discounts</h3>
+                                                <p>To get the more benefits, discounts - App subscription plans, Host
+                                                    Subscription plan.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="aboutproduct-stepper container">
+                    <ul class="nav nav-tabs aboutproduct-tabs" role="tablist">
+                        <li class="nav-item active-tab">
+                            <a class="nav-link active" data-bs-toggle="tab" href="#aboutproduct_step1"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#aboutproduct_step2"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#aboutproduct_step3"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#aboutproduct_step4"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#aboutproduct_step5"></a>
+                        </li>
+                    </ul>
+                    <button class="skip-link" onclick="showBottomSections()">Skip</button>
+                </div>
+            </section>
+
+
+            <section id="apps" class="download-section" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                data-aos-duration="3000">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-4">
+                            <div class="download-block">
+                                <div class="title-block" data-aos="fade-top" data-aos-duration="2000">
+                                    <p>Download An App</p>
+                                    <img src="./Front/image/line-img.svg" width="61" height="2" alt="" />
+                                </div>
+                                <div class="text-block" data-aos="fade-top" data-aos-duration="3000">
+                                    <h3>Best event solutions with quick ticket bookings, great offers and easy refunds
+                                    </h3>
+                                    <p>Event experience for your audience that is visible around your locations.</p>
+                                </div>
+                                <div class ="float-container">
+                                <div class="float-child" data-aos="fade-top" data-aos-duration="4000">
+                                    <a href="#">
+                                        <button type="button" class="btn btn-gradient">Get An App
+                                            <div class="btn-background">
+                                                <img src="./Front/image/playstore-icon.svg" width="24" height="24"
+                                                    alt="" />
+                                            </div>
+                                        </button>
+                                    </a>
+                                </div>
+                                <div class="float-child" data-aos="fade-top" data-aos-duration="4000">
+                                    <a href="https://marvelapp.com/prototype/bb0egi3/screen/90082946">
+                                        <button type="button" class="btn btn-gradient">Try App Prototype
+                                            <div class="btn-background">
+                                                <img src="./Front/image/playstore-icon.svg" width="24" height="24"
+                                                    alt="" />
+                                            </div>
+                                        </button>
+                                    </a>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-8">
+                            <div class="download-img" data-aos="fade-top" data-aos-duration="4000">
+                                <img src="./Front/image/download-img.svg" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img class="down-two-arrow-icon" src="./Front/image/down-two-arrow-icon.svg" width="64" height="69"
+                    alt="" />
+            </section>
+
+
+            <section id="faqs" class="faqs-section" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                data-aos-duration="3000">
+                <img class="down-triangle-icon" src="./Front/image/down-triangle-icon.svg" width="37" height="32" alt=""
+                    data-aos="fade-top" data-aos-duration="4000" />
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <div class="faq-img" data-aos="fade-top" data-aos-duration="4000">
+                                <img src="./Front/image/faqs-img.svg" alt="" />
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="faq-text-block">
+                                <div class="title-block" data-aos="fade-top" data-aos-duration="2000">
+                                    <p>FAQs</p>
+                                    <img src="./Front/image/line-img.svg" width="61" height="2" alt="" />
+                                </div>
+                                <div class="accordion" id="accordionFAQ" data-aos="fade-top" data-aos-duration="3000">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingOne">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapseOne" aria-expanded="true"
+                                                aria-controls="collapseOne">
+                                                <p>How much does it cost to use Chamasoko App?</p>
+                                                <span class="accordian-img">
+                                                    <img src="./Front/image/plus-icon.svg" width="10" height="10"
+                                                        alt="" />
+                                                </span>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse"
+                                            aria-labelledby="headingOne" data-bs-parent="#accordionFAQ">
+                                            <div class="accordion-body">
+                                                <p>You can sign up for free and enjoy your 14 days free trial for almost
+                                                    all paid feature of the application to get more Familier with app.
+                                                </p>
+                                                <p>There are some charges for Create event in free trial, Sharing of
+                                                    some percentage of price for per ticket booking, song request,
+                                                    Advertisement request.</p>
+                                                <p>App subscription for different plan you need to purchase and unlock
+                                                    paid feature for activated plan duration. Host subscription feature
+                                                    give more flexibility to Event Creator or Organisor to customise
+                                                    event for Discount & other event parameter.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                aria-expanded="false" aria-controls="collapseTwo">
+                                                <p>Does Chamasoko app have SCAN ticket feature?</p>
+                                                <span class="accordian-img">
+                                                    <img src="./Front/image/plus-icon.svg" width="10" height="10"
+                                                        alt="" />
+                                                </span>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionFAQ">
+                                            <div class="accordion-body">
+                                                <p>The simple answer to this common Chamasoko tickets FAQ is yes, you
+                                                    can show your ticket to be scan by Organizer. With this app, you can
+                                                    check in attendees by scan the attendees' QR codes on their tickets.
+                                                    Event-goers will love being able to check in without printed
+                                                    tickets, and you'll be able to move attendees through the line more
+                                                    efficiently.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingThree">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                aria-expanded="false" aria-controls="collapseThree">
+                                                <p>How can I make my event safer during COVID-19?</p>
+                                                <span class="accordian-img">
+                                                    <img src="./Front/image/plus-icon.svg" width="10" height="10"
+                                                        alt="" />
+                                                </span>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse"
+                                            aria-labelledby="headingThree" data-bs-parent="#accordionFAQ">
+                                            <div class="accordion-body">
+                                                <p>The changing landscape of COVID-19 plays a role in how you host
+                                                    events. Establishing a layered strategy of safety precautions,
+                                                    including social distancing, sanitizing, and disinfecting can help
+                                                    you improve safety at your next event. Conduct a venue risk
+                                                    assessment to identify the specific safety concerns at your
+                                                    facility.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="review" class="review_section" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                data-aos-duration="3000">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-5 col-lg-4">
+                            <div class="title-block" data-aos="fade-top" data-aos-duration="2000">
+                                <p>Review</p>
+                                <img src="./Front/image/line-img.svg" width="61" height="2" alt="" />
+                            </div>
+                            <div class="title-text" data-aos="fade-top" data-aos-duration="3000">
+                                <h3>What People&nbsp;Said.</h3>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-7 col-lg-8">
+                            <div class="slick-slider" data-aos="fade-top" data-aos-duration="4000">
+                                <div class="element element-1">
+                                    <div class="review-block">
+                                        <div class="review-blockquote">
+                                            <h6>Code Quality</h6>
+                                            <p>“5 stars WordPress template! If anyone wants an example of what you can
+                                                do with this theme.”</p>
+                                        </div>
+                                        <div class="footer-blockquote">
+                                            <p class="author-name">Alex Regelman</p>
+                                            <p class="author-position">Co-founder, Colabrio</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="element element-2">
+                                    <div class="review-block">
+                                        <div class="review-blockquote">
+                                            <h6>Customer Support</h6>
+                                            <p>“It's totally customizable with the theme settings and compatible with a
+                                                tonne of plugins.”</p>
+                                        </div>
+                                        <div class="footer-blockquote">
+                                            <p class="author-name">Laura Morton</p>
+                                            <p class="author-position">UI/UX Designer, Colabrio</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="element element-3">
+                                    <div class="review-block">
+                                        <div class="review-blockquote">
+                                            <h6>Code Quality</h6>
+                                            <p>“5 stars WordPress template! If anyone wants an example of what you can
+                                                do with this theme.”</p>
+                                        </div>
+                                        <div class="footer-blockquote">
+                                            <p class="author-name">Alex Regelman</p>
+                                            <p class="author-position">Co-founder, Colabrio</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="element element-4">
+                                    <div class="review-block">
+                                        <div class="review-blockquote">
+                                            <h6>Customer Support</h6>
+                                            <p>“It's totally customizable with the theme settings and compatible with a
+                                                tonne of plugins.”</p>
+                                        </div>
+                                        <div class="footer-blockquote">
+                                            <p class="author-name">Laura Morton</p>
+                                            <p class="author-position">UI/UX Designer, Colabrio</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="element element-5">
+                                    <div class="review-block">
+                                        <div class="review-blockquote">
+                                            <h6>Code Quality</h6>
+                                            <p>“5 stars WordPress template! If anyone wants an example of what you can
+                                                do with this theme.”</p>
+                                        </div>
+                                        <div class="footer-blockquote">
+                                            <p class="author-name">Alex Regelman</p>
+                                            <p class="author-position">Co-founder, Colabrio</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="element element-6">
+                                    <div class="review-block">
+                                        <div class="review-blockquote">
+                                            <h6>Customer Support</h6>
+                                            <p>“It's totally customizable with the theme settings and compatible with a
+                                                tonne of plugins.”</p>
+                                        </div>
+                                        <div class="footer-blockquote">
+                                            <p class="author-name">Laura Morton</p>
+                                            <p class="author-position">UI/UX Designer, Colabrio</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="element element-7">
+                                    <div class="review-block">
+                                        <div class="review-blockquote">
+                                            <h6>Code Quality</h6>
+                                            <p>“5 stars WordPress template! If anyone wants an example of what you can
+                                                do with this theme.”</p>
+                                        </div>
+                                        <div class="footer-blockquote">
+                                            <p class="author-name">Alex Regelman</p>
+                                            <p class="author-position">Co-founder, Colabrio</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="element element-8">
+                                    <div class="review-block">
+                                        <div class="review-blockquote">
+                                            <h6>Customer Support</h6>
+                                            <p>“It's totally customizable with the theme settings and compatible with a
+                                                tonne of plugins.”</p>
+                                        </div>
+                                        <div class="footer-blockquote">
+                                            <p class="author-name">Laura Morton</p>
+                                            <p class="author-position">UI/UX Designer, Colabrio</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slick-pagination" data-aos="fade-top" data-aos-duration="5000">
+                                <div class="page-no">
+                                    <span id="current-slide" class="current-slide">
+                                    </span>
+                                    <img class="slick-line-icon" src="./Front/image/slick-line-icon.svg" width="50"
+                                        height="2" alt="" />
+                                    <span id="last-slide" class="last-slide">00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="contact-us" class="getintouch-section" data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom" data-aos-duration="3000">
+                <div class="container">
+                    <img class="review-bg-img" src="./Front/image/review-bg-img.svg" alt="" data-aos="fade-top"
+                        data-aos-duration="4000" />
+                    <div class="row">
+                        <div class="col-12 col-lg-8">
+                            <div class="form-block" data-aos="fade-top" data-aos-duration="2000">
+                                <div class="title-block">
+                                    <p>Get In Touch</p>
+                                    <img src="./Front/image/line-img.svg" width="61" height="2" alt="" />
+                                </div>
+                                <div class="text-block" data-aos="fade-top" data-aos-duration="3000">
+                                    <h3>We are here for you! How can we help?</h3>
+                                </div>
+                                <p class="color-text">Drop us a line</p>
+                                <p id="successmessage" class="color-text"> </p>
+                                <form method="post" id="feedback-message">
+                                    <meta name="csrf-token" content="mhLRTPniGjnGfU1SKjp73GUsAStLwjDe4n7hEXg4" />
+                                    <div class="getintouch-form" data-aos="fade-top" data-aos-duration="4000">
+                                        <div class="row">
+                                            <div class="col-12 col-md-6">
+                                                <div class="form-group">
+                                                    <label for="firstname" class="form-label">First Name<span
+                                                            aria-hidden="true" class="required"
+                                                            style="color: red;">*</span></label>
+                                                    <input type="text" class="form-control firstname" id="firstname"
+                                                        name="first_name" placeholder="Enter First Name" />
+                                                    <p class="error-text errorfirstname" id="errorfirstname"
+                                                        style="color: red; padding-top: 4px;">
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <div class="form-group">
+                                                    <label for="lastname" class="form-label">Last Name<span
+                                                            aria-hidden="true" class="required"
+                                                            style="color: red;">*</span></label>
+                                                    <input type="text" class="form-control lastname" id="lastname"
+                                                        name="last_name" placeholder="Enter Last Name" />
+                                                    <p class="error-text errorlastname" id="errorlastname"
+                                                        style="color: red; padding-top: 4px;"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 col-md-6">
+                                                <div class="form-group">
+                                                    <label for="email" class="form-label">Email<span aria-hidden="true"
+                                                            class="required" style="color: red;">*</span></label>
+                                                    <input type="email" class="form-control email" id="email"
+                                                        name="email" placeholder="Enter Email" />
+                                                    <p class="error-text email" id="erroremail"
+                                                        style="color: red; padding-top: 4px;"></p>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <div class="form-group">
+                                                    <label for="phone" class="form-label">Phone<span aria-hidden="true"
+                                                            class="required" style="color: red;">*</span></label>
+                                                    <input type="text" class="form-control phone" id="phone"
+                                                        name="phone" placeholder="Enter Phone" />
+                                                    <p class="error-text phone" id="errorphone"
+                                                        style="color: red; padding-top: 4px;"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 col-md-12">
+                                                <div class="form-group">
+                                                    <label for="message" class="form-label">Message<span
+                                                            aria-hidden="true" class="required"
+                                                            style="color: red;">*</span></label>
+                                                    <input type="text" class="form-control message" id="message"
+                                                        name="message" placeholder="Write your message..." />
+                                                    <p class="error-text message" id="errormessage"
+                                                        style="color: red; padding-top: 4px;"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="btn btn-gradient sendFeedback">Send
+                                            Message</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="contact-info">
+                                <h2 data-aos="fade-top" data-aos-duration="4000">Corporate <br />
+                                    Headquarters</h2>
+                                <div class="contact-block" data-aos="fade-top" data-aos-duration="3000">
+                                    <div class="row">
+                                        <div class="col-2">
+                                            <div class="contact-icon">
+                                                <img src="./Front/image/location-icon.svg" width="23" height="26"
+                                                    alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="col-10">
+                                            <div class="contact-text">
+                                                <p>Skymark One,Shop No.1, Ground Floor, Tower-D,Plot No. H-10B, Sector
+                                                    98, New York, USA-101301</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-2">
+                                            <a href="tel:2585462358">
+                                                <div class="contact-icon">
+                                                    <img src="./Front/image/phone-icon.svg" width="26" height="26"
+                                                        alt="" />
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-10">
+                                            <div class="contact-text">
+                                                <p><a href="tel:2585462358">+1 258 546 2358</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-2">
+                                            <a href="mailto:chamasoko@info.com">
+                                                <div class="contact-icon">
+                                                    <img src="./Front/image/mail-icon.svg" width="24" height="21"
+                                                        alt="" />
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-10">
+                                            <div class="contact-text">
+                                                <p>
+                                                    <a href="mailto:chamasoko@info.com">chamasoko@info.com</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+
+        <footer class="footer-section">
+            <div class="bg-gradiant"></div>
+
+            <section class="footer-download" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                data-aos-duration="3000">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="download-box">
+                                <div class="title-block" data-aos="fade-top" data-aos-duration="4000">
+                                    <p>Download An App</p>
+                                    <img src="./Front/image/line-img.svg" alt="" />
+                                </div>
+                                <div class="text-block" data-aos="fade-top" data-aos-duration="2000">
+                                    <h3>Download Our App Now! and Enjoy with your Friends</h3>
+                                    <p>Event experience for your audience that is visible around your locations, with an
+                                        easy check-in option from anywhere. It is your very own event social network.
+                                    </p>
+                                </div>
+                                <div class="button-block" data-aos="fade-top" data-aos-duration="4000">
+                                    <a href="#">
+                                        <button type="button" class="btn btn-gradient">Get An App
+                                            <div class="btn-background">
+                                                <img src="./Front/image/playstore-icon.svg" width="24" height="24"
+                                                    alt="" />
+                                            </div>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="footer-img" data-aos="fade-top" data-aos-duration="2000">
+                                <img src="./Front/image/footer-img.svg" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="footer-links" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                data-aos-duration="3000">
+                <img class="footer-bg-icon1" src="./Front/image/footer-bg-icon1.svg" width="71" height="74" alt=""
+                    data-aos="fade-top" data-aos-duration="4000" />
+                <img class="footer-bg-icon2" src="./Front/image/footer-bg-icon2.svg" width="21" height="21" alt=""
+                    data-aos="fade-top" data-aos-duration="4000" />
+                <img class="footer-bg-icon3" src="./Front/image/footer-bg-icon3.svg" width="46" height="46" alt=""
+                    data-aos="fade-top" data-aos-duration="4000" />
+                <img class="footer-bg-icon4" src="./Front/image/footer-bg-icon4.svg" width="46" height="46" alt=""
+                    data-aos="fade-top" data-aos-duration="4000" />
+                <img class="footer-bg-icon5" src="./Front/image/footer-bg-icon5.svg" width="21" height="21" alt=""
+                    data-aos="fade-top" data-aos-duration="4000" />
+                <img class="footer-bg-icon6" src="./Front/image/footer-bg-icon6.svg" width="130" height="16" alt=""
+                    data-aos="fade-top" data-aos-duration="4000" />
+                <div class="container">
+                    <div class="footer-logo">
+                        <a href="#">
+                            <img src="./Front/image/footer-logo.svg" width="110" height="130" alt="Chama Soko" />
+                        </a>
+                    </div>
+                    <div class="footer-menus">
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about-us">About Us</a></li>
+                            <li><a href="#our-product">Our Product</a></li>
+                        </ul>
+                        <ul class="pad-menu">
+                            <li><a href="#apps">Apps</a></li>
+                            <li><a href="#faqs">FAQs</a></li>
+                            <li><a href="#contact-us">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-social">
+                        <ul>
+                            <li>
+                                <a href="https://www.facebook.com/" target="_blank">
+                                    <img src="./Front/image/footer-facebook-icon.svg" width="11" height="21" alt="fb" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/" target="_blank">
+                                    <img src="./Front/image/footer-twitter-icon.svg" width="21" height="18" alt="tw" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://instagram.com/chama_soko?igshid=YmMyMTA2M2Y=" target="_blank">
+                                    <img src="./Front/image/footer-instagram-icon.svg" width="21" height="21"
+                                        alt="insta" />
+                                            
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.google.com/" target="_blank">
+                                    <img src="./Front/image/footer-google-icon.svg" width="21" height="21" alt="g" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/raphael-tatum-a664b623b" target="_blank">
+                                    <img src="./Front/image/footer-linkedin-icon.svg" width="21" height="19" alt="in" />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="footer-copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="copyright-text">
+                                <p>© 2023 Chamasoko</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="copyright-menu">
+                                <p>
+                                    <a href="https://app.termly.io/document/privacy-policy/6708d229-35e5-4b92-a122-816f5564488c"
+                                        target="_blank">Privacy & Cookie Policy</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+                                    <a href="https://app.termly.io/document/terms-of-use-for-ecommerce/f6b2eb65-831f-4d13-8599-1b780871ea29"
+                                        target="_blank">Terms of Service</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </footer>
+
+    </div>
+
+
+    <script src="./Front/js/vendor.min.js"></script>
+
+    <script src="./Front/js/script.js"></script>
+    <script>
+
+        $(document).ready(function () {
+            $('.sendFeedback').on('click', function () {
+
+                var data = {
+                    'firstname': $('.firstname').val(),
+                    'lastname': $('.lastname').val(),
+                    'email': $('.email').val(),
+                    'phone': $('.phone').val(),
+                    'message': $('.message').val(),
+                };
+                $.ajaxSetup({
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    }
+                });
+                $.ajax({
+                    method: 'POST',
+                    url: 'https://chamasoko.dashtechinc.com/feedbackmessage',
+                    data: data,
+                    error: function () {
+                        alert('Something is wrong');
+                    },
+                    success: function (response) {
+                        console.log(response);
+                        $('#errorfirstname').html('');
+                        $('#errorlastname').html('');
+                        $('#erroremail').html('');
+                        $('#errorphone').html('');
+                        $('#errormessage').html('');
+                        //$('#errorfirstname').html(response.errors);
+                        if (response.status == 0) {
+                            $('#errorfirstname').html(response.error['firstname']);
+                            $('#errorlastname').html(response.error['lastname']);
+                            $('#erroremail').html(response.error['email']);
+                            $('#errorphone').html(response.error['phone']);
+                            $('#errormessage').html(response.error['message']);
+                        } else {
+                            $('#errorfirstname').html('');
+                            $('#errorlastname').html('');
+                            $('#erroremail').html('');
+                            $('#errorphone').html('');
+                            $('#errormessage').html('');
+                            $('#feedback-message').find('input').val('');
+                            console.log(response);
+                            $('#successmessage').html(response.error['status']);
+                        }
+
+
+                    }
+                });
+
+            });
+
+        });
+    </script>
+    <script defer
+        src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993"
+        integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA=="
+        data-cf-beacon='{"rayId":"79559a500e9c6309","version":"2022.11.3","r":1,"token":"02e30844f49d4932b6d531702b001a52","si":100}'
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

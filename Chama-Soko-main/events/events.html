@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Chama Soko</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Create awesome event experience with Chamasoko" />
+  <link rel="stylesheet" href="../Front/css/style.css">
+  <link rel="stylesheet" href="../Front/css/vendor.min.css" />
+  <link rel="stylesheet" href="./events.css">
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+
+  <div class="wrapper" onmouseover="showBottomSections()">
+
+    <header class="header-section">
+
+      <nav class="navbar navbar-dark navbar-header navbar-expand-lg">
+        <div class="container">
+          <div class="header-logo">
+            <a class="navbar-brand" href="#">
+              <img src="../Front/image/header-logo.svg" alt="Chama Soko" />
+            </a>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+            aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav ms-auto mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./login/login.html">Log In</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pad-btn" href="#">
+                  <button type="button" class="btn btn-gradients">Get An App</button>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="selectBar">
+        <label for="genre">Sort by Genre:</label>
+        <select id="genre">
+          <option value="all">All</option>
+          <option value="rock">Rock</option>
+          <option value="pop">Pop</option>
+          <option value="hip-hop">Hip Hop</option>
+          <option value="country">Country</option>
+          <option value="electronic">Electronic</option>
+          <option value="classical">Classical</option>
+          <option value="jazz">Jazz</option>
+          <option value="latin">Latin</option>
+        </select>
+      </div>
+
+      <div id="results"></div>
+
+      <script>
+        $(document).ready(function () {
+          var apiKey = "y2okMxUXv4lLJxkJF9Pmq9vSm5EMy3h7";
+          var baseUrl = "https://app.ticketmaster.com/discovery/v2/events.json";
+          var city = "Milwaukee";
+          var sort = "date,asc";
+          var pageSize = 50;
+          var pageNumber = 0;
+
+          function fetchDataInternal(url) {
+            return $.ajax({
+              type: "GET",
+              url: url,
+              async: true,
+              dataType: "json",
+              success: function (json) {
+                showResults(json._embedded.events);
+              },
+              error: function (xhr, status, err) {
+                console.log(status + ": " + err);
+              }
+            });
+          }
+
+
+          function showResults(events) {
+            var html = "";
+            for (var i = 0; i < events.length; i++) {
+              var event = events[i];
+              html += "<div class = 'resultSection'>"
+              html += "<h2>" + event.name + "</h2>";
+              html += "<p>Genre: " + event.classifications[0].genre.name + "</p>";
+              html += "<p>Date: " + event.dates.start.localDate + "</p>";
+              html += "<p>Time: " + event.dates.start.localTime + "</p>";
+              html += "<p>Venue: " + event._embedded.venues[0].name + "</p>";
+              html += "</div>";
+            }
+            $('#results').html(html);
+          }
+
+          function fetchData(genre, page) {
+            var url = baseUrl + "?apikey=" + apiKey + "&city=" + city + "&sort=" + sort + "&size=" + pageSize;
+            if (genre !== "all") {
+              url += "&classificationName=" + genre;
+            }
+            return fetchDataInternal(url);
+          }
+
+          // Call fetchData with the initial genre value of 'all'
+          fetchData('all');
+
+          // Add an event listener to the genre dropdown menu
+          $('#genre').on('change', function () {
+            var genre = $(this).val();
+            fetchData(genre, 0);
+          });
+        });
+      </script>
+    </header>
+      </div>
+      
+</body>
+
+</html>
